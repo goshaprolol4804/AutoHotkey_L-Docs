@@ -1,0 +1,180 @@
+Numpad1::
+SendMessage, 0x50,, 0x4190419,, A
+SendInput,{f6}Здравия желаю. Звание АМВ Имя Фамилия.{enter}
+Sleep 1500
+SendInput,{f6}/me отдал воинское приветствие{enter}
+Sleep 1500
+Sendinput, {F6}/do Значок Армии "Мотострелковые Войск" на плече.{Enter}
+Sleep 1500
+SendInput,{f6}/do Удостоверение в левом кармане.{enter}
+Sleep 1500
+SendInput,{f6}/me засунул руку в карман{enter}
+Sleep 1500
+SendInput,{f6}/me Рука в кармане.{enter}
+Sleep 1500
+SendInput,{f6}/me достал удостоверение{enter}
+Sleep 1500
+SendInput,{f6}/showpass {space}
+Sleep 5000
+SendInput,{f6}/me закрыл удостоверение{enter}
+Sleep 1500
+SendInput,{f6}/me убрал удостоверение в карман{enter}
+Sleep 1500
+SendInput,{f6}/do Удостоверение в кармане.{enter}
+Return
+
+Numpad2::
+SendMessage, 0x50,, 0x4190419,, A
+Sendinput,{F6}/do Оружие за спиной.{Enter}
+Sleep 1500
+Sendinput,{F6}/me достал оружие из-за спины{Enter}
+Sleep 1500
+Sendinput,{F6}/do Оружие в руках.{Enter}
+Sleep 1500
+Sendinput,{F6}/me снял оружие с предохранителя{Enter}
+Sleep 1500
+Sendinput,{F6}/do Предохранитель снят.{Enter}
+Sleep 1500
+Sendinput,{F6}/do Оружие в боеготовности.{Enter}
+Return
+
+Numpad3::
+SendMessage, 0x50,, 0x4190419,, A
+Sendinput,{F6}/do Оружие в руках.{Enter}
+Sleep 1500
+Sendinput,{F6}/me поставил оружие на предохранитель{Enter}
+Sleep 1500
+Sendinput,{F6}/do Оружие на предохранителе.{Enter}
+Sleep 1500
+Sendinput,{F6}/me повесил оружие за спину{Enter}
+Sleep 1500
+Sendinput,{F6}/do Оружие за спиной.{Enter}
+Return
+
+AHK |РП тренировка|
+NumPad4::
+SendMessage, 0x50,, 0x4190419,, A
+SendInput, {F6}/me Встал в спортивную стойку {Enter}
+Sleep 1000
+SendInput, {F6}/do Спина ровная у человека {Enter}
+Sleep 2000
+SendInput, {F6}/me Выполнил свободный присед {Enter}
+Sleep 1000
+SendInput, {F6}/do Упрожнение выполнено {Enter}
+Sleep 2000
+SendInput, {F6}/me Встал с приседа {Enter}
+Sleep 2000
+Return
+
+NumPad5::
+SendMessage, 0x50,, 0x4190419,, A
+Sendinput, {F6}/me Принял упор лежа{ENTER}
+Sleep, 1000
+Sendinput, {F6}/do Спина ровная у человека{ENTER}
+Sleep, 1000
+Sendinput, {F6}/me Выполнил отжимание{ENTER}
+Sleep, 1000
+SendInput, {f6}/do Упрожнение выполнено{ENTER}
+Sleep, 2000
+SendInput, {f6}/me Встал с упора лежа{ENTER}
+Sleep, 1000
+return
+
+NumPad6::
+SendMessage, 0x50,, 0x4190419,, A
+Sendinput, {F6}/me свободно захватил перекладину{ENTER}
+sleep 1000
+Sendinput, {F6}/do человек висит{ENTER}
+sleep 1000
+Sendinput, {F6}/me плавно поднял тело{ENTER}
+sleep 1000
+Sendinput, {F6}/me плавно опустил тело{ENTER}
+sleep 1000
+Sendinput, {F6}/me опустил турник{ENTER}
+sleep 1000
+Sendinput, {F6}/do человек стоит на земле{ENTER}
+return
+
+NumPad7::
+SendMessage, 0x50,, 0x4190419,, A
+Sendinput, {F6}/me свободно захватил брусья{ENTER}
+Sleep, 1250
+Sendinput, {F6}/do человек висит{ENTER}
+Sleep, 1250
+Sendinput, {F6}/me плавно поднял тело{ENTER}
+Sleep, 1250
+Sendinput, {F6}/me плавно опустил тело{ENTER}
+Sleep, 1250
+Sendinput, {F6}/me опустил турник{ENTER}
+Sleep, 1250
+Sendinput, {F6}/do человек стоит на земле{ENTER}
+
+AHK |Для призыва|
+Numpad8::
+SendMessage, 0x50,, 0x4190419,, A
+SendInput, {F6}Здравствуйте, если вы на призыв...{Enter}
+Sleep 1500
+SendInput, {F6}Пожалуйста приготовьте такие документы:{Enter}
+Sleep 2000
+SendInput, {F6}Паспорт, мед.карту, лицензии. {Enter}
+Sleep 1500
+SendInput, {f6}/b /showpass ID, /showymk ID, /lic ID{enter}
+Return
+
+Numpad9::
+SendMessage, 0x50,, 0x4190419,, A
+SendInput, {F6}/me лёгким движением руки взял паспорт из рук человека{Enter}
+Sleep 1500
+Send {F6}/anim 6{Enter}
+Sleep 2000
+SendInput, {F6}/me открыл паспорт, затем начал его изучать{Enter}
+Sleep 1500
+SendInput, {F6}/do Процесс..{Enter}
+Sleep 1500
+SendInput, {F6}/me изучил паспорт, затем вернул паспорт владельцу{Enter}
+Return
+
+|АХК|Сборка автомата АК-74
+f1::
+SendMessage, 0x50,, 0x4190419,, A
+Sendinput {F6}Рядовой "Имя_Фамилия"к разборке АК-74 приступил!.{ENTER}
+sleep 3000
+Sendinput {F6}/me Отделил магазин,затем снял с предохранителя и перезарядил{ENTER}
+Sleep 3000
+Sendinput {F6}/me Поставил автомат на пистолетную рукоятку и нажал на курок{ENTER}
+Sleep 3000
+Sendinput {F6}/me Вытащил шомпол и выкрутил пламегаситель,затем опустил автомат{ENTER}
+Sleep 3000
+Sendinput {F6}/me Снял крышку ствольной коробки и вытащил возвратный механизм{ENTER}
+sleep 3000
+Sendinput {F6}/me Вытащил затвор с затворной рамой и отделил их от друг друга{ENTER}
+sleep 3000
+Sendinput {F6}/me Вытащил газовую камеру{ENTER}
+sleep 3000
+Sendinput {F6}Рядовой "Имя_Фамилия"разборку закончил!.{ENTER}
+sleep 3000
+return
+
+f3::
+SendMessage, 0x50,, 0x4190419,, A
+Sendinput {F6}Рядовой "Имя_Фамилия" сборку АК-74 начал!.{enter}
+sleep 3000
+Sendinput {F6}/me Присоединил газовую трубку к корпусу автомата{enter}
+sleep 3000
+Sendinput {F6}/me Присоединил затвор к затворной раме,затем вставил всё в автомат{enter}
+sleep 3000
+Sendinput {F6}/me Присоединил возвратный механизм{enter}
+sleep 3000
+Sendinput {F6}/me Закрыл ствольную коробку крышкой ствольной коробки{enter}
+sleep 3000
+Sendinput {F6}/me Поставил автомат на пистолетную рукоятку и вставил шомпол{enter}
+sleep 3000
+Sendinput {F6}/me Закрутил пламегаситель{enter}
+sleep 3000
+Sendinput {F6}/me Нажал на спусковой кручек{ENTER}
+sleep 3000
+Sendinput {F6}/me Поставил автомат на предохранитель.{ENTER}
+sleep 3000
+Sendinput {F6}Рядовой "Имя_Фамилия" сборку АК-74 закончил!.{Enter}
+sleep 3000
+return
